@@ -12,10 +12,12 @@ function App() {
   };
   
   return (
-    <div>
+    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column'}}>
       <h1>{ num }</h1>
-      <Increment handlePlus={handlePlus}/>
-      <Decrement handleMinus={handleMinus} />
+      <div style={{display: 'flex'}}>
+        <Increment handlePlus={handlePlus}/>
+        <Decrement handleMinus={handleMinus} />
+      </div>
     </div>
   );
 }
